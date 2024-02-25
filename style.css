@@ -1,5 +1,6 @@
 body{
     background-color: crimson;
+    
 }
 #from{
     width: 500px;
@@ -11,5 +12,13 @@ body{
     cursor: pointer;
     border-radius: 30px;
 }
-
-
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 30px;
+}
+.myarea{
+    width: 450px;
+    height: 30px;
+    color: orange;
+}
