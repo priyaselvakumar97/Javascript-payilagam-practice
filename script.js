@@ -35,6 +35,27 @@ function sub1(){
                 // data[i].style.color="yellow";
                 data[i].className="myarea";
             }
-
-
 }
+
+// Date and Time
+          
+  function changecolor(){
+    date=new Date();
+    hour=date.getHours();
+    minute=date.getMinutes();
+    seconds=date.getSeconds();
+    timing=date.toLocaleTimeString();
+    x=document.getElementById("para");
+    x.innerHTML= timing;
+        if(seconds%2==0){
+            x.style.color="red";
+        }else{
+            x.style.color="blue";
+        }
+    }
+    function start(){
+    clear=setInterval(changecolor,1000);  
+ }
+   function stop(){
+    clearInterval(clear);
+   }

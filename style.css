@@ -22,3 +22,13 @@ input{
     height: 30px;
     color: orange;
 }
+
+#para{
+    width: 120px;
+    height: 40px;
+    background-color: yellow;
+    margin: 20px;
+    align-items: center;
+    font-weight: 800;
+
+}
