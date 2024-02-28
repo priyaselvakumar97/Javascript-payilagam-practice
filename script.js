@@ -59,3 +59,14 @@ function sub1(){
    function stop(){
     clearInterval(clear);
    }
+
+// textnode
+function check(){
+        value=document.getElementById("myinput").value;
+        element=document.createElement("p");
+        text=document.createTextNode(value);
+        element.appendChild(text);
+        div=document.getElementById("mydiv");
+        mydiv.appendChild(element);
+    }
+   

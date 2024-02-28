@@ -30,5 +30,19 @@ input{
     margin: 20px;
     align-items: center;
     font-weight: 800;
-
+}
+#mydiv{
+    width: 400px;
+    height: 300px;
+    background-color: yellowgreen;
+}
+#myinput{
+    width: 360px;
+    margin: 10px 20px;
+}
+#mybtn{
+    width: 300px;
+    margin: 0px 50px;
+    height: 25px;
+    border-radius: 50px;
 }
