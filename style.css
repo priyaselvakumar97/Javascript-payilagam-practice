@@ -1,5 +1,5 @@
 body{
-    background-color: crimson;
+    background-color:#CDBAB2;
     
 }
 #from{
@@ -93,4 +93,11 @@ input{
 }
 #btnt{
     margin-left: 120px;
+}
+.show{
+    width: 180px;
+    font-size: 10px;
+    height: 30px;
+    background-color: #001BDB;
+    color: white;
 }

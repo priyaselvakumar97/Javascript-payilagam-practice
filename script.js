@@ -204,20 +204,36 @@ function sendsms(){
         //         }
         // }
  
-            x=["img/1.jpg","img/2.jpg","img/3.jpg"];
-            slide=document.getElementById("m1");
-            count=-1;
+       //         x=["img/1.jpg","img/2.jpg","img/3.jpg"];
+    //         slide=document.getElementById("m1");
+    //         count=-1;
 
-            function forward(){
-                count=count+1;
-                if(count<=x.length)
-                {
-                    if(count==x.length)
-                    {
-                        count=0;
-                    }
-                    slide.src=x[count];
-                }
-                console.log(count);
-            }
-     setInterval(forward,2000);
+    //         function forward(){
+    //             count=count+1;
+    //             if(count<=x.length)
+    //             {
+    //                 if(count==x.length)
+    //                 {
+    //                     count=0;
+    //                 }
+    //                 slide.src=x[count];
+    //             }
+    //             console.log(count);
+    //         }
+    //  setInterval(forward,2000);
+
+    
+    x=document.getElementsByTagName("input");
+    y=document.getElementsByTagName("p");
+    function onMouseover(i)
+    {
+        if(x[i].value=="")
+        {
+            y[i].innerHTML="please fill this field";
+            y[i].className="show";
+        }
+    }
+    function onMouseout(i){
+        y[i].innerHTML="";
+        y[i].classList.remove("show");
+    }
