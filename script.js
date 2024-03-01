@@ -158,3 +158,19 @@ function send(i){
     }
     console.log(count)
   }
+
+//   refresh,reload
+function Refresh()
+  {
+    // time=document.getElementById("i1").value;
+    // time=parseInt(time);
+    time=3;
+    setTimeout("location.reload(true)",time*1000);
+    if(setTimeout("location.assign('https://www.google.com/search?q=sunday+disturbers&rlz=1C1GGRV_enIN1053IN1053&oq=sunday+dis&gs_lcrp=EgZjaHJvb')",time*1000))
+    {
+        document.getElementById("h2").
+        style.color="white";
+        document.getElementsById("b1").style.backgroundColor="yellow"
+    }
+}
+        setInterval(Refresh,3000);
