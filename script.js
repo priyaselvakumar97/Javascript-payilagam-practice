@@ -288,15 +288,25 @@ function check()
     
     email=/^([A-Za-z0-9_.])+\@([a-z])+\.([a-z])+$/ 
     // email=/^([A-Za-z0-9_.])+\@+([a-z])+\.([a-z])+$/
-    if(x[3].value=="")
+    if(x[2].value=="")
     {
         alert("please, fill the email");
         return false;
-    }if(!email.test(x[3].value)){
+    }if(!email.test(x[2].value)){
 
        alert  ("Use only correct email form");
     return false;
 }
 
+            //  passwordd check
 
+        pass=/^((?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*]).{6})+$/
+        if(x[3].value==""){
+            alert("please, insert password");
+            return false;
+        }
+        if(!pass.test(x[3].value)){
+            alert("Use one small, caps, numbers, special chars");
+            return false;
+        }
 }
