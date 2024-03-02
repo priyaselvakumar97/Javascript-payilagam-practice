@@ -238,18 +238,33 @@ function sendsms(){
     //     y[i].classList.remove("show");
     // }
 
-    function check()
-    {
-        Name=document.getElementById("name").value;
-        mobile=document.getElementById("mobile").value;
-        if(Name==" ");
-        {
-            alert("please, fill the name");
-            return false;
-        } 
-        else if (mobile=="");{
-            alert("please, fill the mobile no");
-            return false;
+//     function check()
+//     {
+//         Name=document.getElementById("name").value;
+//         mobile=document.getElementById("mobile").value;
+//         if(Name==" ");
+//         {
+//             alert("please, fill the name");
+//             return false;
+//         } 
+//         else if (mobile=="");{
+//             alert("please, fill the mobile no");
+//             return false;
 
+//     }
+// }
+
+function check()
+{
+    x=document.getElementsByTagName("input");
+    alpha=/^[A-Za-z]+$/
+    if(x[0].value=="")
+    {
+        alert("Please fill the name");
+        return false;
+    }
+    if (alpha.test(x[0].value))
+    {
+        alert("use only alphabets in name")
     }
 }
