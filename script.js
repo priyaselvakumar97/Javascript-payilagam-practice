@@ -223,17 +223,33 @@ function sendsms(){
     //  setInterval(forward,2000);
 
     
-    x=document.getElementsByTagName("input");
-    y=document.getElementsByTagName("p");
-    function onMouseover(i)
+    // x=document.getElementsByTagName("input");
+    // y=document.getElementsByTagName("p");
+    // function onMouseover(i)
+    // {
+    //     if(x[i].value=="")
+    //     {
+    //         y[i].innerHTML="please fill this field";
+    //         y[i].className="show";
+    //     }
+    // }
+    // function onMouseout(i){
+    //     y[i].innerHTML="";
+    //     y[i].classList.remove("show");
+    // }
+
+    function check()
     {
-        if(x[i].value=="")
+        Name=document.getElementById("name").value;
+        mobile=document.getElementById("mobile").value;
+        if(Name==" ");
         {
-            y[i].innerHTML="please fill this field";
-            y[i].className="show";
-        }
+            alert("please, fill the name");
+            return false;
+        } 
+        else if (mobile=="");{
+            alert("please, fill the mobile no");
+            return false;
+
     }
-    function onMouseout(i){
-        y[i].innerHTML="";
-        y[i].classList.remove("show");
-    }
+}
