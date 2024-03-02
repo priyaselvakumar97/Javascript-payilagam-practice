@@ -254,6 +254,9 @@ function sendsms(){
 //     }
 // }
 
+
+            // Form validation Name check
+
 function check()
 {
     x=document.getElementsByTagName("input");
@@ -263,8 +266,40 @@ function check()
         alert("Please fill the name");
         return false;
     }
-    if (alpha.test(x[0].value))
+    if (!alpha.test(x[0].value))
     {
         alert("use only alphabets in name")
     }
+        // Mobile number check
+        number=/^[0-9{10}]+$/
+        if(x[1].value=="")
+    {
+        alert("please, use only 10 digit mobile no");
+        return false;
+    }
+    if (!number.test(x[1].value))
+    {
+        alert("Use only numbers");
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+// form check mobile no
+
+    
