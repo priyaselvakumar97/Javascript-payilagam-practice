@@ -283,23 +283,20 @@ function check()
         return false;
     }
 
+    
+    //  email validation
+    
+    email=/^([A-Za-z0-9_.])+\@([a-z])+\.([a-z])+$/ 
+    // email=/^([A-Za-z0-9_.])+\@+([a-z])+\.([a-z])+$/
+    if(x[3].value=="")
+    {
+        alert("please, fill the email");
+        return false;
+    }if(!email.test(x[3].value)){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+       alert  ("Use only correct email form");
+    return false;
 }
 
 
-// form check mobile no
-
-    
+}
